@@ -11,15 +11,58 @@
         </header>
         <main class="main">
             <div class="content">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi, voluptatibus! Eum, natus. Dolore libero
-                    consectetur repellat. Consequuntur quam non, excepturi
-                    aliquid fuga consectetur voluptates molestiae vitae unde,
-                    corporis mollitia est.
-                </p>
+                <div id="map"></div>
+                <div id="info">
+                    <table id="user">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="header">User</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Name:</td>
+                                <td>John Smith</td>
+                            </tr>
+                            <tr>
+                                <td>Location:</td>
+                                <td>
+                                    <span id="lat">43.12345</span>,
+                                    <span id="lng">-105.15432</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table id="user">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="header">Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Name:</td>
+                                <td>Apocalypse Industries LLC</td>
+                            </tr>
+                            <tr>
+                                <td>Motto:</td>
+                                <td>
+                                    <span id="motto">We Deliver The Best</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location:</td>
+                                <td>
+                                    <span id="lat">43.12345</span>,
+                                    <span id="lng">-105.15432</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </main>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNLrJhOMz6idD05pzfn5lhA-TAw-mAZCU"></script>
         <script src="./src/index.ts"></script>
     </body>
 </html>
