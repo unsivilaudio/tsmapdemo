@@ -29,7 +29,7 @@ Header.header {
     margin: 0 auto;
     margin-top: 2.5rem;
     color: #e1e2e6;
-    background-color: #e77979;
+    background-color: #79a9e7;
     border-radius: 1.2rem;
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
 
@@ -52,7 +52,7 @@ Header.header {
     & .content {
         width: 60%;
         // padding: 1.5rem 2.2rem;
-        background-color: #ccc;
+        background-color: #fff;
         box-shadow: 2px 2px 3px #aaa;
         display: flex;
         justify-content: space-between;
@@ -62,12 +62,31 @@ Header.header {
             flex: 1 1 50%;
             height: 100%;
             min-height: 34.2rem;
+
+            & h1 {
+                font-size: 1.6rem;
+                margin-bottom: 5px;
+            }
+
+            & p {
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
         }
 
         & #info {
             flex: 1 1 50%;
             font-size: 1.6rem;
-            padding: 2rem;
+            padding: 0.7rem 2rem;
+
+            & #user,
+            & #company {
+                border-radius: 2rem;
+                border-spacing: 0;
+                overflow: hidden;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+            }
 
             & table {
                 width: 100%;
@@ -77,19 +96,28 @@ Header.header {
                 }
 
                 & .header {
-                    text-align: right;
+                    // text-align: right;
                     font-size: 2.5rem;
-                    padding: 0.3rem 1.4rem;
-                    padding-right: 0;
+                    font-weight: 300;
+                    color: #fff;
+                    background-color: #79a9e7;
+                    // border-radius: 1rem 1rem 0 0;
                 }
 
                 & tbody {
                     & tr {
+                        display: flex;
+                        justify-content: space-between;
+
+                        & td {
+                            padding: 0.3rem 1rem;
+                        }
                         & td:nth-child(1) {
                             font-style: italic;
                         }
                         & td:nth-child(2) {
                             text-align: right;
+                            font-weight: 700;
                         }
                     }
                 }

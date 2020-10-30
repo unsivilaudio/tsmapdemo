@@ -11,8 +11,8 @@ const user = new User();
 const company = new Company();
 const map = new CustomMap(mapEl);
 
-map.addUserMarker(user);
-map.addCompanyMarker(company);
+map.addMarker(user);
+map.addMarker(company);
 updateUserFields(user);
 updateCompanyFields(company);
 
