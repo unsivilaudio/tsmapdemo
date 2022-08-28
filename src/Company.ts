@@ -1,4 +1,4 @@
-import faker from 'faker';
+import faker from 'faker/dist/faker.js';
 import { Mappable } from './CustomMap';
 
 class Company implements Mappable {
